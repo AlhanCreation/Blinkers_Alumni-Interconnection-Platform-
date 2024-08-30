@@ -1,0 +1,262 @@
+form{
+   margin: .5rem;
+    border-radius: 5px;
+    /* background-color: rgb(237, 234, 230); */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden !important; /* Prevent horizontal scrolling */
+    /* font-family: 'Roboto', sans-serif !important; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+main{
+    flex: 1;
+}
+
+/* Header navigations */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass-drafting{
+    color: #fe424d;
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+  /* Footer */
+
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info {
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.f-info-links,.f-info-socials,.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.f-info-socials i{
+    font-size: 1.3rem;
+}
+
+/* cards */
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:not(.no-hover):hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+.row a{
+    text-decoration: none !important;
+}
+
+/* new form  */
+
+
+.form-label{
+    font-weight: 600;
+}
+
+.large-button {
+    background-color: #fe424d !important;
+    border: none !important;
+    width: 100%; /* Make button width 100% of the container */
+    max-width: 200px; /* Set maximum width */
+    font-size: 1.2rem; /* Increase font size */
+    padding: 0.75rem 1.25rem; /* Add padding */
+    margin-top: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.medium-button {
+    background-color: #fe424d !important;
+    border: none !important;
+    width: 100%; /* Make button width 100% of the container */
+    max-width: 150px; /* Set maximum width for medium button */
+    font-size: 1rem; /* Font size for medium button */
+    padding: 0.5rem 1rem; /* Padding for medium button */
+    margin-top: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+}
+
+
+.large-button:hover,.medium-button:hover {
+    background-color: #fe424d !important; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+
+/* show  */
+
+.show-image{
+    height: 40vh;
+}
+
+.btns{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.btn-edit{
+   background-color: #fe424d !important;
+   border: none;
+   width: 100px !important;
+   padding: top 0.3rem ;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   padding-bottom:.4rem ;
+   font-size: medium;
+   font-weight: 500;
+}
+
+.no-hover {
+    transition: none;
+}
+
+#delete{
+    font-size: smaller;
+    margin: 1rem;
+}
+
+/* Styling for the card's paragraph content */
+.card-text {
+    line-height: 2;
+    margin-bottom: .5rem;
+}
+
+/* Additional styling for the card */
+.card-body h5 {
+    margin-bottom: 0.5rem;
+}
+
+/* // error.ejs
+ */
+
+ .btn-close{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+ /* review-section */
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    padding-bottom: 40px; /* Extra padding for delete button */
+    position: relative; /* For positioning delete button */
+    width: calc(33.333% - 20px); /* Adjust width for three cards per row */
+    min-width: 250px; /* Ensure cards don't get too narrow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stars {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 24px;
+    color: #ddd;
+    margin-right: 4px;
+}
+
+.star.filled {
+    color: #f39c12;
+}
+
+.comment {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.delete-btn {
+    background-color: #fe424d;
+    color: white;
+    border: none;
+    border-radius: 25%;
+    padding: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
